@@ -2,27 +2,56 @@
      SHARED HEADER — header.html
      Loaded dynamically via components.js into all pages
      ============================================================ -->
+     <style>
+      .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 50px;   /* adjust as per your logo */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+     </style>
 <nav id="navbar">
   <div class="container">
     <div class="nav-inner">
 
       <!-- Logo -->
-      <a href="index.html" class="nav-logo" aria-label="Effectical Home">
-  <img src="logo.webp" alt="Effectical Service Solutions Pvt. Ltd." class="logo-img">
+     <a href="index.html" class="nav-logo" aria-label="Effectical Home">
+  
+  <!-- Your Logo Image -->
+  <img src="../assets/logo.webp" alt="Effectical Logo" class="logo-img"  />
+
   <div class="logo-text">
     Effectical
     <span>Service Solutions Pvt. Ltd.</span>
   </div>
+
 </a>
 
       <!-- Desktop Nav Links -->
       <ul class="nav-menu" role="navigation" aria-label="Main Navigation">
         <li><a href="index.html"    data-page="index">Home</a></li>
-        <li><a href="about.html"    data-page="about">About</a></li>
-        <li><a href="services.html" data-page="services">Services</a></li>
-        <li><a href="portals.html"  data-page="portals">Our Portals</a></li>
-        <li><a href="why-us.html"   data-page="why-us">Why Us</a></li>
-        <li><a href="contact.html"  data-page="contact">Contact</a></li>
+        <li><a href="pages/about.html"    data-page="about">About</a></li>
+        <li><a href="pages/services.html" data-page="services">Services</a></li>
+        <li><a href="pages/portals.html"  data-page="portals">Our Portals</a></li>
+        <li><a href="pages/why-us.html"   data-page="why-us">Why Us</a></li>
+        <li><a href="pages/contact.html"  data-page="contact">Contact</a></li>
       </ul>
 
       <!-- CTA + Hamburger -->

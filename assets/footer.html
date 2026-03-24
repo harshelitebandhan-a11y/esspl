@@ -1,0 +1,193 @@
+<footer class="custom-footer" role="contentinfo">
+  <style>
+    .custom-footer {
+      background: #041a33;
+      color: #fff;
+      padding: 70px 0 30px;
+      width: 100%;
+      font-family: system-ui, sans-serif;
+    }
+
+    .custom-footer .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .custom-footer .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .custom-footer a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.75);
+      transition: 0.3s;
+    }
+
+    .custom-footer a:hover {
+      color: #35B6FF;
+      padding-left: 5px;
+    }
+
+    .custom-footer .footer-brand p {
+      margin: 15px 0;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .custom-footer .footer-logo-text {
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    .custom-footer h5 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .custom-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .custom-footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .custom-footer .footer-socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .custom-footer .social-btn {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+    }
+
+    .custom-footer .social-btn:hover {
+      background: #35B6FF;
+      transform: translateY(-3px);
+    }
+
+    .custom-footer .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      align-items: flex-start;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .custom-footer .footer-bottom {
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .custom-footer .footer-bottom a {
+      color: rgba(255,255,255,0.7);
+    }
+
+    @media (max-width: 992px) {
+      .custom-footer .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .custom-footer .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Effectical Home">
+  
+  <!-- Your Logo Image -->
+  <img src="../assets/logo.webp" alt="Effectical Logo" class="logo-img"  />
+
+  <div class="logo-text">
+    Effectical
+    <span>Service Solutions Pvt. Ltd.</span>
+  </div>
+
+</a>
+        <p>
+          A registered digital services company delivering quality websites,
+          portals, and online solutions for businesses across India.
+        </p>
+
+        <!-- <div class="footer-socials">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">X</a>
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">FB</a>
+        </div> -->
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/portals.html">Our Portals</a></li>
+          <li><a href="pages/why-us.html">Why Choose Us</a></li>
+          <li><a href="pages/careers.html">Careers</a></li>
+          <li><a href="pages/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="pages/services.html">Website Development</a></li>
+          <li><a href="pages/services.html">Custom Web Portals</a></li>
+          <li><a href="pages/services.html">Matrimonial Platforms</a></li>
+          <li><a href="pages/services.html">UI/UX Design</a></li>
+          <li><a href="pages/services.html">SEO Development</a></li>
+          <li><a href="pages/services.html">Digital Growth</a></li>
+          <li><a href="pages/services.html">Maintenance & Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">📍 New Delhi, India</div>
+        <div class="footer-contact-item">✉ info@effectical.in</div>
+        <div class="footer-contact-item">📞 +91 XXXXX XXXXX</div>
+        <div class="footer-contact-item">⏰ Mon – Sat: 9 AM – 6 PM IST</div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Effectical Service Solutions Pvt. Ltd. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a> ·
+        <a href="#">Terms of Service</a>
+      </span>
+    </div>
+  </div>
+</footer>

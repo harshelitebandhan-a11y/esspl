@@ -1,0 +1,18 @@
+/* css/about.css — About page specific styles */
+.story-block { max-width: 820px; margin: 0 auto; }
+.story-block p { font-size: 1.02rem; line-height: 1.9; color: var(--text-light); margin-bottom: 20px; }
+.story-highlight { background: var(--blue-soft); border-left: 4px solid var(--blue-deep); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 20px 24px; margin: 28px 0; }
+.story-highlight p { margin: 0; color: var(--dark); font-weight: 500; font-size: 0.97rem; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.team-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px 24px; text-align: center; transition: all var(--transition); }
+.team-card:hover { border-color: var(--blue-border); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.team-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--blue-deep), var(--blue-bright)); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: #fff; }
+.trust-list { display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 0 auto; }
+.trust-item { display: flex; align-items: flex-start; gap: 16px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px 24px; transition: all var(--transition); }
+.trust-item:hover { border-color: var(--blue-border); box-shadow: var(--shadow-sm); }
+.trust-item .icon-box { margin-bottom: 0; flex-shrink: 0; }
+.trust-item h4 { margin-bottom: 5px; }
+.trust-item p  { font-size: 0.9rem; }
+@media (max-width: 768px) {
+  .team-grid { grid-template-columns: 1fr; }
+}

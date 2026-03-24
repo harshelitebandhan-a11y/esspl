@@ -1,0 +1,9 @@
+/* css/contact.css — Contact page specific styles */
+.contact-intro-strip { background: var(--blue-soft); border-top: 1px solid var(--blue-border); border-bottom: 1px solid var(--blue-border); padding: 28px 0; }
+.contact-intro-grid  { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.cig-item { display: flex; align-items: center; gap: 14px; }
+.cig-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--white); border: 1px solid var(--blue-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cig-icon svg { width: 20px; height: 20px; color: var(--blue-deep); }
+.cig-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--blue-deep); font-weight: 600; }
+.cig-value { font-size: 0.92rem; color: var(--dark); font-weight: 500; }
+@media (max-width: 768px) { .contact-intro-grid { grid-template-columns: 1fr; gap: 16px; } }

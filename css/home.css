@@ -1,0 +1,53 @@
+/* ============================================================
+   css/home.css — Homepage-specific styles
+   (Hero section, floating badges, hero visual card)
+   ============================================================ */
+
+/* ── HERO ── */
+#hero { padding: 140px 0 80px; background: linear-gradient(160deg, var(--white) 0%, var(--blue-soft) 100%); position: relative; overflow: hidden; }
+.hero-bg-shape  { position: absolute; top: -100px; right: -150px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(53,182,255,0.14) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+.hero-bg-shape2 { position: absolute; bottom: -80px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(10,86,194,0.07) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 64px; }
+
+/* Badge */
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--blue-soft); border: 1px solid var(--blue-border); padding: 7px 16px; border-radius: 30px; font-size: 0.82rem; font-weight: 600; color: var(--blue-deep); margin-bottom: 22px; }
+.hero-badge .dot { width: 7px; height: 7px; background: #22c55e; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+/* Content */
+.hero-content h1 { margin-bottom: 20px; letter-spacing: -0.5px; }
+.hero-content p  { font-size: 1.1rem; max-width: 500px; margin-bottom: 36px; }
+.hero-btns       { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Visual card */
+.hero-visual { position: relative; }
+.hero-card-main { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-lg); position: relative; }
+.hero-card-main::before { content: ''; position: absolute; inset: -1px; border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(10,86,194,0.1), rgba(53,182,255,0.08), transparent); z-index: -1; }
+.hero-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.hero-stat { background: var(--bg-off); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+.hero-stat strong { display: block; font-family: var(--font-display); font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, var(--blue-deep), var(--blue-bright)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-stat span   { font-size: 0.82rem; color: var(--text-light); margin-top: 4px; display: block; }
+.hero-card-top    { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+.hero-card-logo   { width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-deep), var(--blue-bright)); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.hero-card-logo svg { width: 26px; height: 26px; color: white; }
+.hero-card-title  { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--dark); }
+.hero-card-sub    { font-size: 0.8rem; color: var(--text-light); margin-top: 2px; }
+
+/* Floating badges */
+.float-badge { position: absolute; background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 8px; font-size: 0.8rem; font-weight: 600; font-family: var(--font-display); color: var(--dark); animation: floatUp 4s ease-in-out infinite; }
+.float-badge.badge-1 { top: -16px; right: 20px; animation-delay: 0s; }
+.float-badge.badge-2 { bottom: -16px; left: 20px; animation-delay: 2s; }
+@keyframes floatUp { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.badge-dot        { width: 8px; height: 8px; border-radius: 50%; }
+.badge-dot.green  { background: #22c55e; }
+.badge-dot.blue   { background: var(--blue-bright); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-grid   { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 480px; margin: 0 auto; }
+}
+@media (max-width: 768px) {
+  .hero-visual { display: none; }
+  .hero-btns   { flex-direction: column; }
+}

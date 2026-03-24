@@ -1,0 +1,6 @@
+/* css/careers.css — Careers page specific styles */
+.culture-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.culture-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 28px 24px; text-align: center; transition: all var(--transition); }
+.culture-card:hover { border-color: var(--blue-border); box-shadow: var(--shadow-sm); transform: translateY(-3px); }
+.culture-card .icon-box { margin: 0 auto 14px; }
+@media (max-width: 768px) { .culture-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,20 @@
+/* css/portals.css — Portals page specific styles */
+.portal-detail-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition); }
+.portal-detail-card:hover { border-color: var(--blue-border); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.portal-card-header { background: linear-gradient(135deg, var(--blue-soft) 0%, #dceefb 100%); padding: 48px 40px; display: flex; align-items: center; gap: 24px; border-bottom: 1px solid var(--border); }
+.portal-big-logo { width: 80px; height: 80px; border-radius: var(--radius-md); background: linear-gradient(135deg, var(--blue-deep), var(--blue-bright)); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.5rem; color: #fff; flex-shrink: 0; box-shadow: 0 8px 24px rgba(10,86,194,0.25); }
+.portal-card-header h2 { font-size: 1.7rem; margin-bottom: 6px; }
+.portal-card-body { padding: 36px 40px; }
+.portal-features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+.portal-feature { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--text-light); }
+.portal-feature svg { width: 16px; height: 16px; color: var(--blue-deep); flex-shrink: 0; }
+.portals-summary-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+@media (max-width: 768px) {
+  .portal-card-header { flex-direction: column; text-align: center; }
+  .portal-features    { grid-template-columns: 1fr; }
+  .portal-card-body   { padding: 24px 20px; }
+  .portals-summary-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 480px) {
+  .portals-summary-grid { grid-template-columns: 1fr; }
+}
