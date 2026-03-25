@@ -7,6 +7,57 @@
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"/>
   <link rel="stylesheet" href="../css/global.css"/>
   <link rel="stylesheet" href="../css/portals.css"/>
+  <style>.portal-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.portal-big-logo {
+  width: 78px;
+  height: 78px;
+  min-width: 78px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid rgba(10, 86, 194, 0.08);
+  box-shadow: 0 8px 22px rgba(10, 86, 194, 0.08);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-big-logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(10, 86, 194, 0.14);
+}
+
+.portal-big-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 10px;
+}
+
+.portal-url a:hover {
+  color: var(--blue-deep);
+}
+
+@media (max-width: 767px) {
+  .portal-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portal-big-logo {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+}</style>
 </head>
 <body>
   <div id="site-header"></div>
@@ -51,13 +102,18 @@
     <!-- Elite Bandhan -->
     <div class="portal-detail-card reveal">
       <div class="portal-card-header">
-        <div class="portal-big-logo" aria-hidden="true">EB</div>
+        <a href="https://www.elitebandhan.com" target="_blank" rel="noopener noreferrer" class="portal-big-logo">
+          <img src="assets/logos/elitebandhan.png" alt="Elite Bandhan Logo">
+        </a>
         <div>
           <span class="portal-category" style="font-size:0.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue-bright);display:block;margin-bottom:6px;">Matrimonial Platform</span>
           <h2>Elite Bandhan</h2>
           <div class="portal-url" style="display:flex;align-items:center;gap:6px;color:var(--text-light);font-size:0.85rem;margin-top:6px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            elitebandhan.com
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <a href="https://www.elitebandhan.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">elitebandhan.com</a>
           </div>
         </div>
       </div>
@@ -73,20 +129,25 @@
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Privacy-controlled profiles</div>
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Admin panel and controls</div>
         </div>
-        <a href="#" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit elitebandhan.com</a>
+        <a href="https://www.elitebandhan.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit Elite Bandhan</a>
       </div>
     </div>
 
     <!-- NikahWed -->
     <div class="portal-detail-card reveal">
       <div class="portal-card-header">
-        <div class="portal-big-logo" aria-hidden="true">NW</div>
+        <a href="https://nikahwed.com" target="_blank" rel="noopener noreferrer" class="portal-big-logo">
+          <img src="assets/logos/nikahwed.png" alt="NikahWed Logo">
+        </a>
         <div>
           <span class="portal-category" style="font-size:0.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue-bright);display:block;margin-bottom:6px;">Community Matrimonial</span>
           <h2>NikahWed</h2>
           <div class="portal-url" style="display:flex;align-items:center;gap:6px;color:var(--text-light);font-size:0.85rem;margin-top:6px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            nikahwed.com
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <a href="https://nikahwed.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">nikahwed.com</a>
           </div>
         </div>
       </div>
@@ -102,20 +163,25 @@
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Membership management</div>
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Mobile-responsive design</div>
         </div>
-        <a href="#" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit nikahwed.com</a>
+        <a href="https://nikahwed.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit NikahWed</a>
       </div>
     </div>
 
     <!-- Sangam Vivah -->
     <div class="portal-detail-card reveal">
       <div class="portal-card-header">
-        <div class="portal-big-logo" aria-hidden="true">SV</div>
+        <a href="https://sangamvivah.in" target="_blank" rel="noopener noreferrer" class="portal-big-logo">
+          <img src="assets/logos/sangamvivah.png" alt="Sangam Vivah Logo">
+        </a>
         <div>
           <span class="portal-category" style="font-size:0.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue-bright);display:block;margin-bottom:6px;">Matrimonial Service</span>
           <h2>Sangam Vivah</h2>
           <div class="portal-url" style="display:flex;align-items:center;gap:6px;color:var(--text-light);font-size:0.85rem;margin-top:6px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            sangamvivah.in
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <a href="https://sangamvivah.in" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">sangamvivah.in</a>
           </div>
         </div>
       </div>
@@ -131,20 +197,25 @@
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Express interest feature</div>
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Admin verification tools</div>
         </div>
-        <a href="#" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit sangamvivah.in</a>
+        <a href="https://sangamvivah.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit Sangam Vivah</a>
       </div>
     </div>
 
     <!-- Digiwanna -->
     <div class="portal-detail-card reveal">
       <div class="portal-card-header">
-        <div class="portal-big-logo" aria-hidden="true">DW</div>
+        <a href="https://digiwanna.com" target="_blank" rel="noopener noreferrer" class="portal-big-logo">
+          <img src="assets/logos/digiwanna.png" alt="Digiwanna Logo">
+        </a>
         <div>
           <span class="portal-category" style="font-size:0.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue-bright);display:block;margin-bottom:6px;">Digital Solutions Platform</span>
           <h2>Digiwanna</h2>
           <div class="portal-url" style="display:flex;align-items:center;gap:6px;color:var(--text-light);font-size:0.85rem;margin-top:6px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            digiwanna.com
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--blue-deep);" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <a href="https://digiwanna.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">digiwanna.com</a>
           </div>
         </div>
       </div>
@@ -160,7 +231,7 @@
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>SME-focused digital consulting</div>
           <div class="portal-feature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Analytics and reporting tools</div>
         </div>
-        <a href="#" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit digiwanna.com</a>
+        <a href="https://digiwanna.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:8px;">Visit Digiwanna</a>
       </div>
     </div>
 
